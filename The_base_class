@@ -2,22 +2,23 @@
 package com.sherpa.test.base;
 import org.junit.After;
 import org.junit.Before;
-import com.sherpa.utils.PropertyReader;
+
 import com.thoughtworks.selenium.SeleneseTestCase;
 import com.thoughtworks.selenium.Selenium;
 import com.sherpa.connector.SherpaConnector;
 
 public class SherpaTestBase extends SeleneseTestCase {
 	public static String Variables="your desired url to be tested starting with http://";
-	protected static PropertyReader constants;
+
 	protected Selenium selenium;
+
 	@Before
 	public void setUp() throws Exception {
 		selenium = SherpaConnector.connect();
 		selenium.setSpeed("200");
 		constants = new PropertyReader();
-		//Login.loginIn(selenium, constants);
 	}
+	
 	@After
 	public void tearDown() throws Exception {
 		System.out
