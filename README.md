@@ -17,7 +17,14 @@ java -jar selenium-server-standalone-<version-number>.jar
 more info on http://www.seleniumhq.org/docs/05_selenium_rc.jsp
 
 
-If you like this and you found useful you can contribute on my paypal kirilrap@aol.com
+If you like this and you found useful you can contribute on my paypal kirilrap@aol.com 
+
+<script src="paypal-button.min.js?merchant=YOUR_MERCHANT_ID"
+    data-button="donate"
+    data-name="My product"
+    data-amount="1.00"
+    async
+></script>
 
 
 All the best!
