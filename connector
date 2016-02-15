@@ -1,0 +1,24 @@
+package com.sherpa.connector;
+
+import com.sherpa.test.base.SherpaTestBase;
+import com.thoughtworks.selenium.DefaultSelenium;
+import com.thoughtworks.selenium.Selenium;
+
+public class SherpaConnector {
+	public static Selenium connect() {
+		Selenium selenium = new DefaultSelenium("localhost", 4444,
+				"*googlechrome D:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", SherpaTestBase.Variables);
+		selenium.start();
+		try {
+			selenium.open("");
+		} catch (Exception e) {
+			e.printStackTrace();
+			selenium.close();
+			selenium.stop();
+			System.err.println("!!!FAILED ACCESSING ADDRESS!!!");
+		}
+		System.out
+				.println("!!===================== Connected =====================!!");
+		return selenium;
+	}
+}
