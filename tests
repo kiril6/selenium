@@ -1,0 +1,23 @@
+
+import org.junit.Test;
+import com.sherpa.test.base.SherpaTestBase;
+
+
+	public class SrednoskolciFlowTest extends SherpaTestBase {
+  
+  @Test
+  		public void testName() throws Exception {
+  		//here will be your selenese custom code, actions can be recorded with the selenium IDE the firefox addon and exporter to any programming language (for this only in java)
+  		
+  			System.out
+  					.println("!!+++++++++++++++++++++ successful +++++++++++++++++++++!!");
+  		}
+	}
+	
+	//you can have many tests as you want starting with @Test annotation example down bellow
+	
+	  @Test
+  		public void testName2() throws Exception {
+  	
+  		}
+	}
